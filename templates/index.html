@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AyoBot - Your AI Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+</head>
+<body>
+
+  <!-- 🌗 Theme Toggle -->
+  <button id="themeToggle" aria-label="Toggle Light/Dark Theme">Switch Theme</button>
+
+  <!-- 🧠 App Title -->
+  <h1>Welcome to AyoBot</h1>
+  <p class="intro-text">What can I help you with?</p>
+
+  <!-- 💬 Chat Display Area -->
+  <div class="chat-container" id="chatContainer"></div>
+
+  <!-- ⌨️ User Input with Mic -->
+<div class="input-container">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Type or speak your message..."
+      onkeydown="handleKeyPress(event)"
+      aria-label="Message Input"
+    />
+    <button onclick="sendMessage()" aria-label="Send Message">Send</button>
+    <button id="micButton" aria-label="Voice Input 🎤">🎤</button>
+  </div>
+
+  <!-- 🔽 Scroll to Bottom -->
+  <button id="scrollToBottom" onclick="scrollToBottom()" aria-label="Scroll to latest message">⬇</button>
+
+  <!-- 📜 Scripts -->
+  <script src="{{ url_for('static', path='script.js') }}"></script>
+</body>
+</html>

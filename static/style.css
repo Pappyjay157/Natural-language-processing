@@ -1,0 +1,196 @@
+/* 🌌 Global Styling */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+  }
+  
+  /* 🎛️ Theme Toggle Button */
+  #themeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    background-color: #0ef;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px rgba(0, 238, 255, 0.5);
+  }
+  
+  /* 💬 Chat Container */
+  .chat-container {
+    max-width: 80%;
+    height: 65vh;
+    margin: 20px auto;
+    overflow-y: auto;
+    border: 2px solid #0ef;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+    box-shadow: 0px 0px 10px rgba(0, 238, 255, 0.5);
+    padding: 15px;
+    text-align: left;
+  }
+  
+  /* 💬 Message Styling */
+  .chat-message {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    display: inline-block;
+    clear: both;
+  }
+  
+  /* 👤 User Message */
+  .user-message {
+    background-color: #0ef;
+    color: black;
+    float: right;
+  }
+  
+  /* 🤖 Bot Message */
+  .bot-message {
+    background-color: #444;
+    color: white;
+    float: left;
+  }
+  
+  /* ⌨️ Input Area */
+  .input-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px -2px 10px rgba(0, 238, 255, 0.5);
+  }
+  
+  input[type="text"] {
+    width: 65%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #0ef;
+    border-radius: 5px;
+    background-color: black;
+    color: #0ef;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 238, 255, 0.8);
+  }
+  
+  /* 🖱️ Buttons */
+  button {
+    padding: 14px 20px;
+    background-color: #0ef;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #06c;
+  }
+  
+  /* 🎤 Mic Button */
+  #micButton {
+    font-size: 18px;
+    padding: 14px;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #0ef;
+    color: black;
+    border: none;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 238, 255, 0.5);
+  }
+  #micButton:hover {
+    background-color: #06c;
+    color: white;
+  }
+  
+  /* 🔽 Scroll Button */
+  #scrollToBottom {
+    position: fixed;
+    bottom: 80px;
+    right: 15px;
+    padding: 10px;
+    background-color: #0ef;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 238, 255, 0.5);
+  }
+  
+  /* 🌞 Light Mode */
+  .light-mode {
+    background-color: #f5f5f5 !important;
+    color: #222 !important;
+  }
+  
+  .light-mode .chat-container {
+    background-color: #eaeaea !important;
+    border-color: #bbb;
+    box-shadow: 0px 0px 8px rgba(100, 100, 100, 0.3);
+  }
+  
+  .light-mode .input-container {
+    background-color: #dcdcdc !important;
+  }
+  
+  .light-mode input[type="text"] {
+    background-color: #f9f9f9 !important;
+    color: #222 !important;
+    border: 2px solid #999;
+  }
+  
+  .light-mode .user-message {
+    background-color: #0af;
+    color: black;
+  }
+  
+  .light-mode .bot-message {
+    background-color: #d1d1d1;
+    color: #222;
+  }
+  
+  .light-mode #micButton {
+    background-color: #0af;
+    color: black;
+  }
+  
+  .light-mode #micButton:hover {
+    background-color: #0077cc;
+    color: white;
+  }
+  #micButton {
+    background-color: #0ef;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 14px 18px;
+    box-shadow: 0px 0px 10px rgba(0, 238, 255, 0.6);
+  }
+  
